@@ -1,0 +1,36 @@
+*{
+    padding: 0%;
+}
+body{
+    background-image: url(imagens/fundo.jpg);
+}
+
+.bloco1{
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    margin-left: 42rem;
+    margin-right: 10rem;
+    margin-top: 3%;
+    background-color: transparent;
+}
+
+.bloco1  h1{
+    color: rgba(1, 40, 216, 0.692);
+    font-size: 2rem;
+}
+
+.bloco1  p{
+    /* color: rgba(65, 59, 59, 0.692); */
+    font-weight: 700;
+    margin-top: 3px;
+    /* float: right; */   
+}
+
+.bloco1 #outiline{
+    font-size: 25px;
+}
+
+#Paragrafo-personalizado{
+    font-size: 25px;
+}
