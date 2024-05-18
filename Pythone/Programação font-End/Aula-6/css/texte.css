@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(16, 184, 156);
+    color: rgb(0, 0, 0);
+}
+
+/* Estilo para o tema escuro */
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
