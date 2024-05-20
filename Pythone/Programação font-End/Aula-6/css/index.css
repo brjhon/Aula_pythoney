@@ -78,18 +78,6 @@ section{
     border-radius: 0px 0px 12px 12px;
 }
 
-/* #fundopara{
-    position: absolute;
-    justify-content: left;
-    padding-left: 10%;
-    border-radius: 0px 0px 12px 12px;
-    width: 100%;
-    height: auto;
-    margin: 0%;
-    padding-left: 0%;
-
-} */
-
 .home .img{
     padding: 2%;
     justify-content: left;
@@ -141,29 +129,29 @@ section{
     justify-content: center;
     width: 15rem;
     height: auto;
-    background: var(--linha-blo);
-    border: .2rem solid var(--color--blue);
+    background: transparent;
+    border: .2rem solid rgb(6, 6, 119);
     border-radius: .8rem ;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: .3rem;
-    color: var(--second--blo);
+    color: rgb(184, 124, 12);
     z-index: 1;
     overflow: hidden;
     transition: .5s;
 }
 
 .btn-box .btn:hover{
-    color: var(--linha-blo);
+    color: black;
 }
 
 .btn-box .btn:nth-child(2){
-    background:var(--terce-blo);
+    background: transparent;
     color: var(--linha-blo);
 }
 
 .btn-box .btn:nth-child(2):hover{
-    color: var(--terce-blo);
+    color: rgb(184, 124, 12);
 }
 
 .btn-box .btn:nth-child(2)::before{
