@@ -8,16 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* :root{
-    --second--blo:#000000;
-    --terce-blo:#010f29;
-    --text-blo:#000000;
-    --linha-blo:#f5f108;
-    --color--blue:#0c1cad;   
-} */
-
 body{
-    /* background: var(--second--blo); */
     font-size: 9%;
     background-color: rgb(78, 100, 199);
     
