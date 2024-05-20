@@ -81,27 +81,36 @@ section{
 
 .home{
     display: flex;
-    /* float: left; */
     align-items: center;                   
     padding: 0 9%;                         
-    background: url('imagens/funco.jpg') no-repeat;
+    background-image: url(imagens/funco.jpg);
     background-size: cover;                
     background-position: center;           
-    /* border-radius: 10rem 0px 0rem 10rem;   */
     box-shadow:rgba(2, 7, 71, 0.788) 0px 0px 35px 35px;
     border-radius: 0px 0px 12px 12px;
 }
+
+/* #fundopara{
+    position: absolute;
+    justify-content: left;
+    padding-left: 10%;
+    border-radius: 0px 0px 12px 12px;
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    padding-left: 0%;
+
+} */
 
 .home .img{
     padding: 2%;
     justify-content: left;
     margin-left: 10%;
+    
 }
 
 .home-content{
     max-width: 60rem;
-/*     padding-right: 10%;
-    margin-left: 10%; */
 }
 
 .home-content h1{
@@ -459,15 +468,17 @@ li{
   
   /* ---------------------Reda Pé----------------- */
 
+
  .Base-texto{
-    background: linear-gradient(-45deg, #000000 4%, #06023b75 100% );
-    box-shadow: #0c038a 25px 25px 25px 25px ;
+    background: linear-gradient(-45deg, #000000 4%, #1607e275 100% );
     width: 100%;
     height: 100%;
     /* margin-left: 5rem; */
-    margin-top: 4rem;
+    margin-top: 3rem;
     display: flex;
   }
+
+
 
   .Base-texto ul{
     width: auto;
@@ -476,13 +487,19 @@ li{
     color: var(--text-blo);
     margin: 1.8rem;
     margin-left: 4%;
-    margin-top: 3rem;
   }
 
   .Base-texto h1{
     font-size: 1.4rem;
     line-height: 5rem;
     
+  }
+
+  .Base-texto p{
+    font-size: 13px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
   }
 
   .Base-texto i{
@@ -492,13 +509,12 @@ li{
 
   .Base-texto a{
     color: #f7f7f7;
-    font-size: 15px;
+    font-size: 13px;
     display: block;
     gap: 40px;
     margin-top: 10%;
   }
-
-  /* buton de mudar o tema de cor */
+  
 /* <reset-style> ============================ */
 button {
     border: none;
@@ -696,6 +712,3 @@ button {
       transform: rotate(0deg);
     }
   }
-  
-
-
