@@ -10,7 +10,7 @@
 
 body{
     font-size: 9%;
-    background-color: rgb(78, 100, 199);
+    background-color: rgb(14, 105, 141);
     
 }
 
@@ -30,7 +30,7 @@ body{
 }
 
 .logo{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: var(--text-blo);
     font-weight: 600;
 }
@@ -42,7 +42,7 @@ body{
 }
 
 .navbar a {
-    font-size: 1rem;
+    font-size: 1.7rem;
     color: var(--text-blo);
     font-weight: 500;
     margin-left: 3.5rem;
@@ -104,13 +104,13 @@ section{
     font-size: 2.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .7px var(--linha-blo);   
+    -webkit-text-stroke: .7px rgba(250, 234, 4, 0.89);   
 }
 
 .home-content p{
     font-size: 2.2rem;
     margin: 2rem 0 4rem;
-    color: var(--text-blo);
+    color: white;
 }
 
 .btn-box{
@@ -242,18 +242,27 @@ section{
     border-radius:  0rem 0px 5rem 5rem;  
     flex-wrap: wrap;
     margin: auto;
+    
 }
 
 #Industry h2{
     text-align: center;
     line-height: normal;
-    font-size: 3rem;
-    color: var(--linha-blo);
+    font-size: 4rem;
+    /* color: rgb(255, 255, 255); */
+    -webkit-text-stroke: .9px rgba(8, 92, 43, 0.89);
 }
+/* #Industry h4{
+  text-align: center;
+  line-height: normal;
+  font-size: 3rem;
+  color: white;
+} */
 
-.About p{
-    font-size: 1.5rem;
-    color: var(--text-blo);
+#Industry p{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(151, 130, 130) ;
     display: flex;
     max-width: 50rem;
     text-align: center;
@@ -312,8 +321,7 @@ li{
 }
 
 #Industry p{
-    font-size: large;
-    /* padding: 20px 20px 0; */
+    font-size: x-large;
 }
 
 #Industry a h4{
@@ -334,7 +342,7 @@ li{
     margin-bottom: 10rem;
     height: auto;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: rgba(95, 95, 107, 0.884) 0px 0px 12px 12px ;
+    box-shadow: rgba(6, 6, 161, 0.884) 0px 0px 12px 12px ;
 }
 
 
@@ -343,23 +351,22 @@ li{
 .caixatop{
     width: 100%;
     height: auto;
-    box-shadow: #04054b 0px 0px 10px 10px;
+    box-shadow: #040522 0px 0px 20px 20px;
     border-radius: 12px 12px 12px 12px ;
     display: flex;
     padding: 3%;
     padding-left: 7%;
-    /* margin-left: 3rem; */
     flex-wrap: wrap;
 }
 
 .card {
-    position: relative;
-    margin: 1rem;
+   /*  position: relative; */
+    margin: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 2rem;
-    width: 330px;
+    width: 380px;
     box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.63);
     border-color: #04054b;
     padding: 45px;
@@ -386,14 +393,15 @@ li{
   
   .content .heading {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 62px;
     position: absolute;
     margin-left: 9rem;
     margin-top: 3rem;
   }
   
-  .content .para {
+  #Kali-Everywhere p {
     line-height: 1.5;
+    color: #f7f7f7;
   }
   
   .content .btn {
