@@ -332,7 +332,7 @@ li{
     margin-top: 7.5%;
     margin-left: 3rem;
     margin-bottom: 10rem;
-    height: auto;   
+    height: auto;
     border-radius: 20px 20px 20px 20px;
     box-shadow: rgba(95, 95, 107, 0.884) 0px 0px 12px 12px ;
 }
@@ -360,7 +360,8 @@ li{
     justify-content: center;
     margin-left: 2rem;
     width: 330px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.63);
+    border-color: #04054b;
     padding: 45px;
     overflow: hidden;
     border-radius: 10px;
@@ -404,7 +405,7 @@ li{
     cursor: pointer;
     background: linear-gradient(-45deg, #0dc4ba 0%, #0c038a 100% );
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.2);
   }
   
   .card::before {
