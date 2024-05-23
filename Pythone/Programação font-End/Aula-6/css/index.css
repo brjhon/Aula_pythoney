@@ -11,7 +11,7 @@
 body{
     font-size: 9%;
     background-color: rgb(14, 105, 141);
-    
+        
 }
 
 .header{
@@ -368,7 +368,8 @@ li{
 .caixatop{
     width: 97%;
     height: auto;
-    box-shadow: #040522 0px 0px 20px 20px;
+    background: linear-gradient(-45deg, #000000 0%, #847edf 100% );
+    box-shadow: #040981 0px 0px 20px 20px;
     border-radius: 12px 12px 12px 12px ;
     display: flex;
     padding: 3%;
@@ -378,7 +379,7 @@ li{
 
 .card {
    /*  position: relative; */
-    margin: 0.6rem;
+    margin: 0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
