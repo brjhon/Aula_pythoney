@@ -17,8 +17,8 @@ Latter = int(18)
 Descapuccino = int(20)
 
 #parte do pagamento do café
-senha = int(121312)
-senha1 = int(223122)
+senha = int(input("Digite a senha do seu cartão de Debito: "))
+senha1 = int(input("Digite a senha do seu cartão de Credito: "))
 
 cafeteria = int(input(f"Digite 1 para 'Expresso',\n digite 2 para 'Tradicional',\n digite 3 para 'Capuccino',\n digite 4 para 'Latter',\n digite 5 para 'Descapuccino': "))
 
