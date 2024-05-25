@@ -5,7 +5,7 @@ Carro = int(input("Qual e o carro: "))
 
 if avaliação == 1:
     print(f"A avaliação de seu {Carro} de 0% para 50%")
-    
+
 elif avaliação == 2:
         print(f"A avaliação de seu {Carro} de 50% para 80%")
 

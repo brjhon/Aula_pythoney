@@ -11,6 +11,7 @@ def calcular_preco():
     nota_avaliacao = dpg.get_value("nota_avaliacao")
     
     try:
+        
         # Tenta converter os valores obtidos para os tipos numéricos adequados
         preco_fipe = float(preco_fipe)
         nota_avaliacao = int(nota_avaliacao)
