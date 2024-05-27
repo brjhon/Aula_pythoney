@@ -13,7 +13,7 @@ elif avaliação == 3:
         print(f"A avaliação de seu {Carro} de 80% para 100%")
 
 elif avaliação == 4:
-    break
+     print(f"A avaliação de seu {Carro} de 80% para 100%")
 
 else:
     print("Você escolheu uma opção invalida")
