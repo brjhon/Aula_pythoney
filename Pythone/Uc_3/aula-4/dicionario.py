@@ -7,13 +7,16 @@ while True:
         break
     elif acao == 'adicionar':
         produto = input("Digite o nome do produto: ")
-        quantidade = int(input("Digite a quantidade (use número negativo para saída de estoque): "))
-        
+        quantidade = int(input("Digite a quantidade: "))
+
         if produto in inventario:
             inventario[produto] += quantidade
-            print(f"Estoque de {produto} atualizado para {inventario[produto]}.")
+            print(f"{quantidade} unidades de {produto} foram adicionadas ao inventário.")
+
         else:
-            print("Produto não encontrado no inventário.")
+            print("produto não encontrado no inventário")        
+
+
     elif acao == 'remover':
         produto = input("Digite o nome do produto que deseja remover completamente do inventário: ")
         if produto in inventario:
@@ -21,6 +24,11 @@ while True:
             print(f"{produto} foi removido do inventário.")
         else:
             print("Produto não encontrado no inventário.")
+
+    elif acao == 'adição':
+        produto = input("Digite o nome do produto que deseja adcionar ao inventário: ")
+        inventario[produto] = dict()
+
     elif acao == 'mostrar':
         print("Inventário Atualizado:")
         for produto, estoque in inventario.items():
