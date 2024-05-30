@@ -11,10 +11,10 @@ print("Tente encontrar o tesouro. Voc~e tem 3 tentativas. ")
 contador = 0 
 
 # Um Loop para as tentativas do Usuário ate ele der um valor desejado
-while contador != tentativas 
+while contador != Tentativas 
     contador += 1 
-    papilte = int(input("Escolha um indice para procurar o tesouro: "))
-    if 0 <= papilte <= 9:#Verificação se o palpite está dentro do intervalo
+    palpite = int(input("Escolha um indice para procurar o tesouro: "))
+    if 0 <= palpite <= 9:#Verificação se o palpite está dentro do intervalo
         if locais[palpite] == 1:
             print("Voce encontrou")
         else:
@@ -23,5 +23,5 @@ while contador != tentativas
     else:
         print("Por favor, insira um número entre 0 e 9.")
 
-if(contador == tentativas):
+if(contador == Tentativas):
     print(f"Suas tentativas acabarma! O tesouro estava no índice. ")

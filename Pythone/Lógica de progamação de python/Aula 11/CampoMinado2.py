@@ -1,7 +1,7 @@
 import random
 
 def verificar_tesouro(indici, locais):
-    if locais[indice] == 1:
+    if locais[indici] == 1:
         return(True)
     
     else:
@@ -26,8 +26,8 @@ contador = 0
 # Um Loop para as tentativas do Usuário ate ele der um valor desejado
 while contador != tentativas 
     contador += 1 
-    papilte = int(input("Escolha um indice para procurar o tesouro: "))
-    if 0 <= papilte <= 9:#Verificação se o palpite está dentro do intervalo
+    palpite = int(input("Escolha um indice para procurar o tesouro: "))
+    if 0 <= palpite <= 9:#Verificação se o palpite está dentro do intervalo
         if verificar_tesouro(palpite, locais) == True:
             print("Parabés! Voce encontrou o tesouro!")
             break
