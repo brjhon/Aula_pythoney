@@ -18,13 +18,13 @@ locais [ lugar_tesouro]
 # Define o número de tentativas 
 tentativas = 3
 print("Bem vindo ao jogo de caça ao tesouro!")
-print("Tente encontrar o tesouro. Voc~e tem 3 tentativas. ")
+print("Tente encontrar o tesouro. Voce tem 3 tentativas. ")
 print("Escolha um número entre 0 e 9 para procurar o tesouro. ")
 #Inicializa o contador de tentativas 
 contador = 0 
 
 # Um Loop para as tentativas do Usuário ate ele der um valor desejado
-while contador != tentativas 
+while contador != tentativas:
     contador += 1 
     palpite = int(input("Escolha um indice para procurar o tesouro: "))
     if 0 <= palpite <= 9:#Verificação se o palpite está dentro do intervalo

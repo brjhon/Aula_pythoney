@@ -1,21 +1,5 @@
 #Faça um programa que simule uma sessão classificatória de Formula 1. 
 #Onde recebera o nome e o melhor tempo de um piloto.
-""" clasificação1 = [], []
-clasificação2= [], []
-clasificação3 = [], []
-
-
-name = input("Digite 10 nomes dos pilotos e o melhor tempo percorrido de cada um, clasificação(nome:tempo):  ")
-#Max Verstappen Sergio Pérez Lewis Hamilton Fernando Alonso Carlos Sainz Jr Charles Leclerc Lando Norris 
-for i in range(10):
-    
-    name = input(f"piloto {i+1}: ")
-    tempo = input(f"tempo {i+1}: ")
-    clasificação1.append(name)
-    entrada = input (f"piloto {i+1}: ")
-    print(nome_6Q1 + tempo_6Q1)
- """
-
 # matrizes para armazenar os dados das classificatórias
 classificatoria1= [], []
 classificatoria2= [], []
