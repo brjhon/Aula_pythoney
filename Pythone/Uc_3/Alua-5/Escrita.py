@@ -1,6 +1,6 @@
 #Especificar o nome do arquivo e o conteúdo
 nome_arquivo = 'exemplo.txt'
-conteudo = 'Este é um ecemplo de conteúdo.'
+conteudo = 'Este é um exemplo de conteúdo.'
 
 
 #Abrir p arquivo no modo de escrita e escrever o conteúdo

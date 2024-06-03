@@ -1,1 +1,4 @@
-oi 
+Uma versão de Kali está sempre perto de você, não importa onde você precise.
+                  Dispositivos móveis, contêineres, ARM, provedores de nuvem, subsistema Windows para Linux,
+                  Máquina virtual pré-construída, imagens de instalação e outros estão disponíveis. </p>
+            
