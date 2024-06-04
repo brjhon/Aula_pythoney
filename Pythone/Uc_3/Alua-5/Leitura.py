@@ -1,6 +1,6 @@
 # Especificar o nome do arquivo a ser lido
 nome_arquivo = 'exemplo.txt'
-
+conteudo = 'exemplo'
 # Tentar abrir o arquivo no modo de leitura e ler o conteúdo
 try:
     with open(nome_arquivo, 'r') as arquivo:
