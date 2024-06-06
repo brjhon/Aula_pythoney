@@ -12,11 +12,10 @@ def Cheke(a):
     elif a == "time":
         return "Botafogo"
 
-    elif a == "Vivo":
+    elif a == "vivo":
         return "Morto"
 
     else:
-        print("Opção errada")
+        return "Opção invalida"
     
-
-    print(Cheke(Nome))
+print(Cheke(Nome))
