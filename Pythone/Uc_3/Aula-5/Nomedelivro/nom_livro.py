@@ -11,5 +11,5 @@ with open(nome, 'r') as arquivo:
         print(f"Conteúdo do arquivo '{titulo}':\n{autor}")
         Livronew = input("/n Deseja adcionarlivro? (sim/não): ").lower()
         
-    print(f"Conteúdo do arquivo '{nome}':\n{conteudo}")
+    print(f"Conteúdo do arquivo '{nome}':\n{Livronew}")
     
