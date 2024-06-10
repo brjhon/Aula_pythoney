@@ -8,8 +8,10 @@ def gerar_numeros():
 # Função para ordenar os números usando um método simples de ordenação
 def ordenar_numeros(lista_numeros):
     for i in range(len(lista_numeros)):
+        #Parte onde acontece a organização das castas.
         for j in range(i + 1, len(lista_numeros)):
             if lista_numeros[i] > lista_numeros[j]: 
+                #Organizacional de lista por lista.
                 lista_numeros[i], lista_numeros[j] = lista_numeros[j], lista_numeros[i]
     return lista_numeros
 
