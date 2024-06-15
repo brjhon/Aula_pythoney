@@ -17,7 +17,22 @@
 #    endereco VARCHAR(255)
 #);
 
+#ALTER TABLE `schema-principal`.`departames` 
+#ADD COLUMN `Recurso` VARCHAR(45) NULL AFTER `nome`,
+#ADD COLUMN `Ti` VARCHAR(50) NOT NULL AFTER `Recurso`,
+#ADD COLUMN `Matketing` VARCHAR(100) NOT NULL AFTER `Ti`,
+#CHANGE COLUMN `nome` `nome` TEXT(100) NOT NULL ,
+#DROP PRIMARY KEY,
+#ADD PRIMARY KEY (`idepe`, `Recurso`, `Matketing`);
+
+# Muda o nome das variaves dentro da tabela----
+#select idepe as codigodeidentificação, nome as areas
+#from departames 
+#group by idepe;,
+
+#select Funcionarios.none as funcionario, Funcionarios.cargo, Funcionarios.salarios, Departamentos.none as departamento 
+#from Funcionarios
+#join Departamentos on Funcionarios.departamento_id = departamento.id 
+
 #select  nome from livro where autor = 'J. K. Rowling' and Paginas > 400  
-
-
 
