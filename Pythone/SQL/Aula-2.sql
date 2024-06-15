@@ -30,9 +30,15 @@
 #from departames 
 #group by idepe;,
 
+#Mostra os Funcionarios ---------------------
 #select Funcionarios.none as funcionario, Funcionarios.cargo, Funcionarios.salarios, Departamentos.none as departamento 
 #from Funcionarios
 #join Departamentos on Funcionarios.departamento_id = departamento.id 
+
+#Mostra o cargo ----------------
+#select Funcionarios.nome as funcionario, funcionarios.cargo as cargo, Departamentos.nome as Departamento 
+#from Funcionarios
+#join Departamentos on Funcionarios.departamento_id = Departamentos.id where Departamentos.nome = 'T.I'
 
 #select  nome from livro where autor = 'J. K. Rowling' and Paginas > 400  
 
