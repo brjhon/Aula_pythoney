@@ -25,14 +25,14 @@
 #DROP PRIMARY KEY,
 #ADD PRIMARY KEY (`idepe`, `Recurso`, `Matketing`);
 
-CREATE TABLE Funcionarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100),
-    cargo VARCHAR(50),
-    salario DECIMAL(10, 2),
-    departamento_id INT,
-    FOREIGN KEY (departamento_id) REFERENCES Departamentos(id)
-);
+#CREATE TABLE Funcionarios (
+#    id INT AUTO_INCREMENT PRIMARY KEY,
+#    nome VARCHAR(100),
+#    cargo VARCHAR(50),
+#    salario DECIMAL(10, 2),
+#    departamento_id INT,
+#    FOREIGN KEY (departamento_id) REFERENCES Departamentos(id)
+#);
 
 
 # Muda o nome das variaves dentro da tabela----
