@@ -48,68 +48,25 @@
 #jogo_batalha_naval()
 
 
-import mysql.connector
-from mysql.connector import Error
+import numpy as np
 
-# Configuração da conexão
-config = {
-    'user': 'root',
-    'password': '',  # Substitua pelo seu password
-    'host': '127.0.0.1',
-    'raise_on_warnings': True
-}
+def jogo_batalha_naval():
+    tabuleiro = np.zeros((5, 5), dtype=int)
+    posicao_navio = (np.random.randint(0, 5), np.random.randint(0, 5))
+    tentativas = 3
+    acertou = False
+    
+    while not acertou:
+        print("\nTabuleiro:")
+        print(tabuleiro)
+        linha = int(input("Adivinhe a linha (0-4): "))
+        coluna = int(input("Adivinhe a coluna (0-4): "))
+        tentativas += 1
+        if (linha, coluna) == posicao_navio:
+            print(f"Você acertou o navio em {tentativas} tentativas!")
+            acertou = True
+        else:
+            tabuleiro[linha, coluna] = - tentativas
+            print("Errou! Tente novamente.")
 
-try:
-    # Conectando ao servidor MySQL
-    conn = mysql.connector.connect(**config)
-    if conn.is_connected():
-        print("Conectado ao servidor MySQL")
-
-    cursor = conn.cursor()
-
-    # Listar todos os bancos de dados
-    cursor.execute("SHOW DATABASES")
-    databases = cursor.fetchall()
-    print("Databases available:")
-    for db in databases:
-        print(db[0])
-
-    # Selecione o banco de dados correto
-    database_name = 'auto'
-
-    if (database_name,) in databases:
-        conn.database = database_name
-        print(f"Usando o banco de dados '{database_name}'")
-    else:
-        print(f"Database '{database_name}' não encontrado. Por favor, verifique o nome do banco de dados.")
-        cursor.close()
-        conn.close()
-        exit()
-
-    # Função para ler dados específicos de uma tabela
-    def read_table_fields(table_name, fields):
-        try:
-            # Transforma a lista de campos em uma string separada por vírgula
-            fields_str = ', '.join(fields)
-            cursor.execute(f"SELECT {fields_str} FROM {table_name}")
-            rows = cursor.fetchall()
-            print(f"Dados da tabela '{table_name}':")
-            for row in rows:
-                print(row)
-        except Error as e:
-            print(f"Erro ao ler a tabela {table_name}: {e}")
-
-    # Lendo dados específicos das tabelas
-    print("\nLeitura de dados específicos:")
-    read_table_fields('caminhoes', ['Preço', 'Quilometragem'])
-    read_table_fields('carro', ['Preço', 'Quilometragem'])
-    read_table_fields('motos', ['Preço', 'Quilometragem'])
-
-except Error as e:
-    print(f"Erro ao conectar ao MySQL: {e}")
-
-finally:
-    if conn.is_connected():
-        cursor.close()
-        conn.close()
-        print("Conexão ao MySQL encerrada")
+jogo_batalha_naval()

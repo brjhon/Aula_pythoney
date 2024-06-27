@@ -25,7 +25,7 @@ try:
         print(db[0])
 
     # Selecione o banco de dados correto
-    database_name = 'loja' 
+    database_name = 'loja'
 
     if (database_name,) in databases:
         conn.database = database_name
